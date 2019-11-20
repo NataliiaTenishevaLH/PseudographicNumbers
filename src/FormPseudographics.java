@@ -44,21 +44,48 @@ public class FormPseudographics {
        return array;
    }
 
-   public void printPseudographic(int number){
+    public void printPseudographic(Integer[] sequence){
 
-      String[][] array = pseudographicStorage.get(number);
+       StringBuilder[] arrayOfLines = new StringBuilder[7];
 
-       StringBuilder result = new StringBuilder();
-       for(int i = 0; i <= 5; i++){
+       for(int l = 0; l < arrayOfLines.length; l++) {
+           StringBuilder result = new StringBuilder();
 
-            for(int j = 0; j <= 6; j++){
-               result.append(array[i][j]);
+           for (int k = 0; k < sequence.length; k++) {
+               if(isNumber(k)) {
+                   String[][] array = pseudographicStorage.get(sequence[k]);
+
+                   for (int j = 0; j <= 6; j++) {
+                       try {
+                           result.append(array[l][j]);
+                       } catch (Exception e) {
+                       }
+                   }
+               }
            }
-           result.append("\n");
-
+           arrayOfLines[l] = result;
        }
-      System.out.print(result.toString());
+        for(int i = 0; i < arrayOfLines.length; i++){
+            System.out.println(arrayOfLines[i].toString());
+        }
      }
+
+
+    public static boolean isNumber(String s){
+        try{
+            Integer.parseInt(s);
+            return true;
+        } catch (NumberFormatException ex)
+        {
+            return false;
+        }
+    }
+
+    public static boolean isNumber(Object o)
+    {
+        return o instanceof Integer;
+    }
+
    }
 
 
