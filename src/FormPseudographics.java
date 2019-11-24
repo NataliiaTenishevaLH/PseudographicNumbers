@@ -23,6 +23,78 @@ public class FormPseudographics {
        stringBuilder1.append("   | | ").append("*");
        stringBuilder1.append("   |_| ").append("*");
        pseudographicStorage.put(1, formArray(stringBuilder1));
+
+       StringBuilder stringBuilder2 = new StringBuilder();
+       stringBuilder2.append(" ___   ").append("*");
+       stringBuilder2.append("|__ \\  ").append("*");
+       stringBuilder2.append(" ) | | ").append("*");
+       stringBuilder2.append("  / /  ").append("*");
+       stringBuilder2.append(" / /_  ").append("*");
+       stringBuilder2.append("|____| ").append("*");
+       pseudographicStorage.put(2, formArray(stringBuilder2));
+
+           StringBuilder stringBuilder3 = new StringBuilder();
+       stringBuilder3.append(" ____  ").append("*");
+       stringBuilder3.append("|___ \\ ").append("*");
+       stringBuilder3.append("  ) | |").append("*");
+       stringBuilder3.append(" |__ < ").append("*");
+       stringBuilder3.append(" ___) |").append("*");
+       stringBuilder3.append("|____/ ").append("*");
+       pseudographicStorage.put(3, formArray(stringBuilder3));
+
+       StringBuilder stringBuilder4 = new StringBuilder();
+       stringBuilder4.append(" _  _  ").append("*");
+       stringBuilder4.append("| | | |").append("*");
+       stringBuilder4.append("| |_| |").append("*");
+       stringBuilder4.append("|__  _|").append("*");
+       stringBuilder4.append("   | | ").append("*");
+       stringBuilder4.append("   |_| ").append("*");
+       pseudographicStorage.put(4, formArray(stringBuilder4));
+
+       StringBuilder stringBuilder5 = new StringBuilder();
+       stringBuilder5.append(" _____ ").append("*");
+       stringBuilder5.append("| ____|").append("*");
+       stringBuilder5.append("|  |__ ").append("*");
+       stringBuilder5.append("|___  \\").append("*");
+       stringBuilder5.append(" ___) |").append("*");
+       stringBuilder5.append("|____/ ").append("*");
+       pseudographicStorage.put(5, formArray(stringBuilder5));
+
+       StringBuilder stringBuilder6 = new StringBuilder();
+       stringBuilder6.append("   __  ").append("*");
+       stringBuilder6.append("  / /  ").append("*");
+       stringBuilder6.append(" / /_  ").append("*");
+       stringBuilder6.append("| '_ \\ ").append("*");
+       stringBuilder6.append("| (_) |").append("*");
+       stringBuilder6.append(" \\___/ ").append("*");
+       pseudographicStorage.put(6, formArray(stringBuilder6));
+
+       StringBuilder stringBuilder7 = new StringBuilder();
+       stringBuilder7.append(" _____ ").append("*");
+       stringBuilder7.append("|____ |").append("*");
+       stringBuilder7.append("   / / ").append("*");
+       stringBuilder7.append("  / /  ").append("*");
+       stringBuilder7.append(" / /   ").append("*");
+       stringBuilder7.append("/_/    ").append("*");
+       pseudographicStorage.put(7, formArray(stringBuilder7));
+
+       StringBuilder stringBuilder8 = new StringBuilder();
+       stringBuilder8.append("  ___  ").append("*");
+       stringBuilder8.append(" / _ \\ ").append("*");
+       stringBuilder8.append("| (_) |").append("*");
+       stringBuilder8.append(" > _ < ").append("*");
+       stringBuilder8.append("| (_) |").append("*");
+       stringBuilder8.append(" \\___/ ").append("*");
+       pseudographicStorage.put(8, formArray(stringBuilder8));
+
+       StringBuilder stringBuilder9 = new StringBuilder();
+       stringBuilder9.append("  ___  ").append("*");
+       stringBuilder9.append(" / _ \\ ").append("*");
+       stringBuilder9.append("| (_) |").append("*");
+       stringBuilder9.append(" \\__, |").append("*");
+       stringBuilder9.append("   / / ").append("*");
+       stringBuilder9.append("  /_/  ").append("*");
+       pseudographicStorage.put(9, formArray(stringBuilder9));
    }
 
     private String[][] formArray(StringBuilder stringBuilder) {
@@ -61,6 +133,7 @@ public class FormPseudographics {
                        } catch (Exception e) {
                        }
                    }
+                   result.append(" ");
                }
            }
            arrayOfLines[l] = result;
